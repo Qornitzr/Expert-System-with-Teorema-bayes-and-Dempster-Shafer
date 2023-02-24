@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HasilDiagnosaActivity">
+
+    <RelativeLayout android:id="@+id/relative1"
+        android:background="@color/colorPrimary"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--        android:onClick="prosesajagung"-->
+
+        <TextView android:textSize="14sp"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Kemungkinan Penyakit dengan Nilai Probabilitas Terbesar dan Gejala Terbanyak"/>
+
+        <TextView android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_below="@+id/textView1"/>
+
+        <TextView android:textSize="18sp"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_below="@+id/textView2"/>
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relative1"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+                <RelativeLayout android:id="@+id/relative2"
+                    android:background="#ffeceff1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:id="@+id/textView01"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Saran Penyakit"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textViewSaran"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Saran"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/relative2"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewtitik4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/relative2"
+                    android:layout_toEndOf="@+id/textViewSaran"/>
+
+                <TextView
+                    android:id="@+id/tv_SaranPenyakit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="TextView"
+                    android:layout_below="@+id/relative2"
+                    android:layout_toEndOf="@+id/textViewSaran"/>
+
+                <RelativeLayout android:id="@+id/relative3"
+                    android:background="#ffeceff1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_SaranPenyakit">
+
+                    <TextView android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:id="@+id/textView02"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deskripsi Penyakit"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textViewDeskripsi"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Deskripsi"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/relative3"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewtitik5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/relative3"
+                    android:layout_toEndOf="@+id/textViewSaran"/>
+
+                <TextView
+                    android:id="@+id/tv_DeskripsiPenyakit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="TextView"
+                    android:layout_below="@+id/relative3"
+                    android:layout_toEndOf="@+id/textViewSaran"/>
+
+                <RelativeLayout android:id="@+id/relative4"
+                    android:background="#ffeceff1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_DeskripsiPenyakit">
+
+                    <TextView android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:id="@+id/textView03"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nilai Probabilitas Tiap Penyakit"/>
+
+                </RelativeLayout>
+                <!--    <androidx.recyclerview.widget.RecyclerView-->
+                <!--        android:layout_width="match_parent"-->
+                <!--        android:layout_height="match_parent"-->
+                <!--        android:id="@+id/recycler_view12"-->
+                <!--        tools:listitem="@layout/card_layout_admin"-->
+                <!--        android:layout_below="@+id/relative2"/>-->
+
+            <com.example.sistempakarteodemp.ExpandableHeightListView
+                android:id="@+id/lv_viewpenyakit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/relative4"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:focusable="false"
+                android:scrollbars="none"
+                >
+
+            </com.example.sistempakarteodemp.ExpandableHeightListView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView_dataAdminList"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:scrollbars="vertical"
+    android:background="#E8E8E8"
+    app:cardCornerRadius="30dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="ID"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewtitik1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=":"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_toEndOf="@+id/textView1"/>
+
+        <TextView
+            android:id="@+id/tv_IdPenyakit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="TextView"
+            android:layout_toEndOf="@+id/textViewtitik1"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Nama Penyakit"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/textView1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewtitik2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=":"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/textViewtitik1"
+            android:layout_toEndOf="@+id/textView2"/>
+
+        <TextView
+            android:id="@+id/tv_NamaPenyakit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/tv_IdPenyakit"
+            android:layout_toEndOf="@+id/textViewtitik2"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:text="Deskripsi"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewtitik3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text=":"
+            android:textStyle="bold"
+            android:layout_below="@+id/textViewtitik2"
+            android:layout_toEndOf="@+id/textView3"/>
+
+        <TextView
+            android:id="@+id/tv_DeskripsiPenyakit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="16dp"
+            android:text="Text View"
+            android:layout_below="@+id/tv_NamaPenyakit"
+            android:layout_toEndOf="@+id/textViewtitik3"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Saran"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_DeskripsiPenyakit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewtitik4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text=":"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_DeskripsiPenyakit"
+            android:layout_toEndOf="@+id/textView3"/>
+
+        <TextView
+            android:id="@+id/tv_SaranPenyakit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="TextView"
+            android:layout_below="@+id/tv_DeskripsiPenyakit"
+            android:layout_toEndOf="@+id/textViewtitik4"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

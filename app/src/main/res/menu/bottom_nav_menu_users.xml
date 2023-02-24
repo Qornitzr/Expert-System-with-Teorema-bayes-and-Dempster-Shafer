@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_nav_home_users"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/bottom_nav_kosong"
+        android:title=""/>
+
+
+    <item
+        android:id="@+id/bottom_nav_menu_users"
+        android:title="Menu"
+        android:icon="@drawable/ic_baseline_menu_open_24"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+</menu>

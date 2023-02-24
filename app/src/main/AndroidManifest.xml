@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sistempakarteodemp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.HasilRiwayatDiagnosaActivity"></activity>
+        <activity android:name=".Activity.HasilDiagnosaActivity" />
+        <activity android:name=".admin.TambahEditPengetahuanActivity" />
+        <activity android:name=".admin.TambahEditGejalaActivity" />
+        <activity android:name=".admin.TambahEditPenyakitActivity" />
+        <activity android:name=".admin.DataAdminActivity" />
+        <activity android:name=".admin.UbahPasswordActivity" />
+        <activity android:name=".admin.InfoJumlahDataGejalaAdminActivity" />
+        <activity android:name=".admin.InfoJumlahDataPengetahuanAdminActivity" />
+        <activity android:name=".admin.InfoJumlahDataPenyakitAdminActivity" />
+        <activity android:name=".admin.TambahAdminActivity" />
+        <activity android:name=".admin.EditProfileAdminActivity" />
+        <activity android:name=".SplashScreen.SplashScreenAdmin" /> <!-- admi -->
+        <!-- <activity android:name=".SplashScreen.SplashScreenUser" /> -->
+        <!-- <activity android:name=".admin.DasboardAdminActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- users -->
+        <activity android:name=".admin.DasboardAdminActivity" />
+        <activity android:name=".SplashScreen.SplashScreenUser"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".admin.LoginAdminActivity" />
+        <activity android:name=".Activity.TentangActivity" />
+        <activity android:name=".Activity.RiwayatDiagnosaActivity" />
+        <activity android:name=".Activity.KeteranganPenyakitActivity" />
+        <activity android:name=".Activity.InfoJumlahDataPengetahuanActivity" />
+        <activity android:name=".Activity.InfoJumlahDataGejalaActivity" />
+        <activity android:name=".Activity.InfoJumlahDataPenyakitActivity" />
+        <activity android:name=".Activity.DiagnosaActivity" />
+        <activity android:name=".Activity.DasboardUserActivitiy" />
+    </application>
+
+</manifest>

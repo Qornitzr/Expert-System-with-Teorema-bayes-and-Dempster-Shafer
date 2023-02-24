@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_profile"
+    tools:context=".Activity.TentangActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout" />
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cardView_NamaPenyakit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:hintEnabled="false"
+                    android:background="@drawable/white_boarder">
+                    <TextView
+                        android:id="@+id/tv_JudulTeo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Teorema Bayes"
+                        android:textAlignment="center"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@null"/>
+                    <TextView
+                        android:id="@+id/tv_IsiTeo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="x"
+                        android:justificationMode="inter_word"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@null"/>
+                    <TextView
+                        android:id="@+id/tv_JudulDemp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Dempster Shafer"
+                        android:textAlignment="center"
+                        android:textSize="23sp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@null"/>
+                    <TextView
+                        android:id="@+id/tv_IsiDemp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="d"
+                        android:justificationMode="inter_word"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@null"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
